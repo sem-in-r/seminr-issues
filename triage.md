@@ -7,7 +7,8 @@
 Related documents:
 
 - [next-release.md](next-release.md) — PRs merged to develop, issues to close on next release
-- [v2.4.2.md](releases/v2.4.2.md) — release history, closed issues, archived PRs
+- [archive.md](archive.md) — closed issues and PRs not tied to a specific release
+- [releases/](releases/) — release history
 
 ## Summary
 
@@ -106,18 +107,11 @@ Low priority explorations -- not actively being addressed.
 
 ## Candidates for Closing
 
-### Stale PRs (>2 years)
-
-| PR | Title | Decision Needed |
-| --- | --- | --- |
-| [**#217**](https://github.com/sem-in-r/seminr/pull/217) | Package paper | Evaluate: still want paper? |
-
 ### Stale Issues
 
 | Issue | Title | Reason |
 | --- | --- | --- |
-| [**#209**](https://github.com/sem-in-r/seminr/issues/209) | MKL CRAN test | Old CI issue |
-| [**#222**](https://github.com/sem-in-r/seminr/issues/222) | pls_predict HOC error | Likely covered by other HOC fixes |
+| [**#222**](https://github.com/sem-in-r/seminr/issues/222) | pls_predict HOC error | Likely covered by other HOC fixes; labeled `research` |
 
 ---
 
