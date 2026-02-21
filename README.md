@@ -1,6 +1,6 @@
 # SEMinR Issue Triage
 
-Private issue triage and release planning for [sem-in-r/seminr](https://github.com/sem-in-r/seminr).
+Issue triage and release planning for [sem-in-r/seminr](https://github.com/sem-in-r/seminr).
 
 ## Structure
 
