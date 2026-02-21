@@ -3,70 +3,63 @@
 **Repository**: [sem-in-r/seminr](https://github.com/sem-in-r/seminr)
 **Updated**: 2026-02-21
 **Issue closing policy**: Fixed in develop, close on release
-**Completed items**: See [CLAUDE.issues-completed.md](CLAUDE.issues-completed.md) for release history, closed issues, and archived PRs
+
+Related documents:
+- [develop-upcoming.md](develop-upcoming.md) — PRs merged to develop, issues to close on next release
+- [completed-2.4.2.md](completed-2.4.2.md) — release history, closed issues, archived PRs
 
 ## Summary
 
 | Current Version | PRs to Review | Merged (pending release) | Experimental | Ready to Work | Needs Investigation | Backlog |
 | --------------- | ------------- | ------------------------ | ------------ | ------------- | ------------------- | ------- |
-| v2.4.2          | 1 (community) | 5 PRs                   | 2 PRs        | 5 moderate | 4 issues | 20+     |
+| v2.4.2 | 1 (community) | [5 PRs](develop-upcoming.md) | 2 PRs | 5 moderate | 4 issues | 20+ |
 
 ---
 
-## 🔥 Immediate Actions
+## Immediate Actions
 
 ### PRs Ready to Review
 
 | PR | Author | Status | Notes |
 | --- | --- | --- | --- |
-| [**#394**](https://github.com/sem-in-r/seminr/pull/394) | @Marwolaeth | 📋 Open | Enable custom confidence levels for plotting bootstrapped models; community contribution |
-
-### PRs Merged to Develop (pending next release)
-
-| PR | Fixes | Author | Merged | Notes |
-| --- | --- | --- | --- | --- |
-| [**#395**](https://github.com/sem-in-r/seminr/pull/395) | [#318](https://github.com/sem-in-r/seminr/issues/318) (parallel "no package seminr") | @soumyaray | ✅ 2026-02-20 | Propagate `.libPaths()` to workers, shared `setup_parallel_cluster()` helper, remove `seminr::` self-refs |
-| [**#396**](https://github.com/sem-in-r/seminr/pull/396) | [#299](https://github.com/sem-in-r/seminr/issues/299) + [#205](https://github.com/sem-in-r/seminr/issues/205) (PLSc + HOC bootstrap) | @soumyaray | ✅ 2026-02-20 | Fix `boot_vec_len` miscalculation in error-recovery; rename shadowed `length` variable |
-| [**#384**](https://github.com/sem-in-r/seminr/pull/384) | [#386](https://github.com/sem-in-r/seminr/issues/386) (macOS CI failures) | @soumyaray | ✅ 2026-02-20 | Switch to PPM repo for macOS; remove macOS-devel from matrix; add workflow_dispatch + setup-pandoc@v2 |
-| [**#397**](https://github.com/sem-in-r/seminr/pull/397) | — (CI modernization) | @soumyaray | ✅ 2026-02-21 | Add Windows CI, modernize to standard r-lib/actions `check-r-package@v2`, use public RSPM for all platforms |
-| [**#398**](https://github.com/sem-in-r/seminr/pull/398) | [#327](https://github.com/sem-in-r/seminr/issues/327) (quadratic interaction error) | @soumyaray | ✅ 2026-02-21 | `drop=FALSE` fixes for matrix subset coercion; add `quadratic_term()` convenience function |
+| [**#394**](https://github.com/sem-in-r/seminr/pull/394) | @Marwolaeth | Open | Enable custom confidence levels for plotting bootstrapped models; community contribution |
 
 ---
 
-## 📋 Ready to Work On
+## Ready to Work On
 
 ### Moderate Priority Bugs
 
 | Issue | Title | Status | Notes | Cluster |
 | --- | --- | --- | --- | --- |
-| [**#364**](https://github.com/sem-in-r/seminr/issues/364) | all_loc_non_int_items() issue | 📋 Open | Internal function; recent (2025-08) | — |
-| [**#341**](https://github.com/sem-in-r/seminr/issues/341) | HTMT Inf error in bootstrap | 📋 Open | Small sample sizes; low engagement | bootstrap |
-| [**#348**](https://github.com/sem-in-r/seminr/issues/348) | Duplicate paths in plot() | 📋 Open | Construct defined twice | plot |
-| [**#262**](https://github.com/sem-in-r/seminr/issues/262) | Ten Berge fails non-numeric | 📋 Open | Missing data type check | — |
-| [**#213**](https://github.com/sem-in-r/seminr/issues/213) | save_plot() HOC + moderation | 📋 Open | Plot export issue | hoc + plot |
+| [**#364**](https://github.com/sem-in-r/seminr/issues/364) | all_loc_non_int_items() issue | Open | Internal function; recent (2025-08) | -- |
+| [**#341**](https://github.com/sem-in-r/seminr/issues/341) | HTMT Inf error in bootstrap | Open | Small sample sizes; low engagement | bootstrap |
+| [**#348**](https://github.com/sem-in-r/seminr/issues/348) | Duplicate paths in plot() | Open | Construct defined twice | plot |
+| [**#262**](https://github.com/sem-in-r/seminr/issues/262) | Ten Berge fails non-numeric | Open | Missing data type check | -- |
+| [**#213**](https://github.com/sem-in-r/seminr/issues/213) | save_plot() HOC + moderation | Open | Plot export issue | hoc + plot |
 
 ### High-Demand Features
 
 | Issue | Title | Status | Notes |
 | --- | --- | --- | --- |
-| [**#375**](https://github.com/sem-in-r/seminr/issues/375) + [**#136**](https://github.com/sem-in-r/seminr/issues/136) | Export results to file | 📋 Open | Combine into `export_results()` |
-| [**#90**](https://github.com/sem-in-r/seminr/issues/90) | Bootstrap indirect effects | 📋 Open | Core mediation feature |
-| [**#110**](https://github.com/sem-in-r/seminr/issues/110) | Categorical variable support | 📋 Open | Long-standing request |
+| [**#375**](https://github.com/sem-in-r/seminr/issues/375) + [**#136**](https://github.com/sem-in-r/seminr/issues/136) | Export results to file | Open | Combine into `export_results()` |
+| [**#90**](https://github.com/sem-in-r/seminr/issues/90) | Bootstrap indirect effects | Open | Core mediation feature |
+| [**#110**](https://github.com/sem-in-r/seminr/issues/110) | Categorical variable support | Open | Long-standing request |
 
 ---
 
-## 🔍 Needs Investigation
+## Needs Investigation
 
 | Issue | Title | Status | What's Needed |
 | --- | --- | --- | --- |
-| [**#350**](https://github.com/sem-in-r/seminr/issues/350) | "Bootstrapping keeps running" | 📋 Open | Reproducible example needed |
-| [**#256**](https://github.com/sem-in-r/seminr/issues/256) | Bootstrapping issue | 📋 Open | Tagged `doing` since 2022; check if still relevant |
-| [**#339**](https://github.com/sem-in-r/seminr/issues/339) | Near-zero-variance binary | 📋 Open | Left open for discoverability; consider documenting as known limitation |
-| [**#291**](https://github.com/sem-in-r/seminr/issues/291) | Dissimilar p-values in MGA | 📋 Open | Methodology clarification; tagged `documentation` |
+| [**#350**](https://github.com/sem-in-r/seminr/issues/350) | "Bootstrapping keeps running" | Open | Reproducible example needed |
+| [**#256**](https://github.com/sem-in-r/seminr/issues/256) | Bootstrapping issue | Open | Tagged `doing` since 2022; check if still relevant |
+| [**#339**](https://github.com/sem-in-r/seminr/issues/339) | Near-zero-variance binary | Open | Left open for discoverability; consider documenting as known limitation |
+| [**#291**](https://github.com/sem-in-r/seminr/issues/291) | Dissimilar p-values in MGA | Open | Methodology clarification; tagged `documentation` |
 
 ---
 
-## 📦 Backlog
+## Backlog
 
 ### Features
 
@@ -99,9 +92,9 @@
 
 ---
 
-## 🧪 Experimental PRs
+## Experimental PRs
 
-Low priority explorations — not actively being addressed.
+Low priority explorations -- not actively being addressed.
 
 | PR | Title | Author | Notes |
 | --- | --- | --- | --- |
@@ -110,7 +103,7 @@ Low priority explorations — not actively being addressed.
 
 ---
 
-## 🗑️ Candidates for Closing
+## Candidates for Closing
 
 ### Stale PRs (>2 years)
 
@@ -134,16 +127,16 @@ Understanding these patterns helps prioritize fixes that address multiple issues
 ### HOC/Higher-Order Construct Issues
 
 - **Open**: [#222](https://github.com/sem-in-r/seminr/issues/222), [#213](https://github.com/sem-in-r/seminr/issues/213)
-- **Fixed in develop**: [#299](https://github.com/sem-in-r/seminr/issues/299) + [#205](https://github.com/sem-in-r/seminr/issues/205) — [PR #396](https://github.com/sem-in-r/seminr/pull/396) merged
+- **Fixed in develop**: [#299](https://github.com/sem-in-r/seminr/issues/299) + [#205](https://github.com/sem-in-r/seminr/issues/205) -- [PR #396](https://github.com/sem-in-r/seminr/pull/396) merged
 - **Pattern**: HOC + bootstrap failures
 - **Recommendation**: Review remaining HOC code paths (#222, #213) now that #396 is merged
 
 ### Bootstrap Issues
 
 - **Open**: [#350](https://github.com/sem-in-r/seminr/issues/350), [#341](https://github.com/sem-in-r/seminr/issues/341), [#339](https://github.com/sem-in-r/seminr/issues/339), [#256](https://github.com/sem-in-r/seminr/issues/256), [#250](https://github.com/sem-in-r/seminr/issues/250), [#163](https://github.com/sem-in-r/seminr/issues/163)
-- **Fixed in develop**: [#318](https://github.com/sem-in-r/seminr/issues/318) — [PR #395](https://github.com/sem-in-r/seminr/pull/395) merged; [#299](https://github.com/sem-in-r/seminr/issues/299)+[#205](https://github.com/sem-in-r/seminr/issues/205) — [PR #396](https://github.com/sem-in-r/seminr/pull/396) merged
-- **CI**: [PR #397](https://github.com/sem-in-r/seminr/pull/397) adds Windows CI — bootstrap parallel tests now verified on all 3 platforms
-- **Recently closed**: #329 (haven interference, not seminr — closed 2026-02-21)
+- **Fixed in develop**: [#318](https://github.com/sem-in-r/seminr/issues/318) -- [PR #395](https://github.com/sem-in-r/seminr/pull/395) merged; [#299](https://github.com/sem-in-r/seminr/issues/299)+[#205](https://github.com/sem-in-r/seminr/issues/205) -- [PR #396](https://github.com/sem-in-r/seminr/pull/396) merged
+- **CI**: [PR #397](https://github.com/sem-in-r/seminr/pull/397) adds Windows CI -- bootstrap parallel tests now verified on all 3 platforms
+- **Recently closed**: #329 (haven interference, not seminr -- closed 2026-02-21)
 - **Pattern**: Many edge cases and environment-specific issues
 - **Recommendation**: Two highest-impact bootstrap bugs (#318, #299+#205) now merged; close issues on next release; remaining open items are lower priority
 
@@ -161,4 +154,4 @@ Understanding these patterns helps prioritize fixes that address multiple issues
 ### Summary Function Issues
 
 - **Open**: [#341](https://github.com/sem-in-r/seminr/issues/341) (HTMT Inf with small samples)
-- **Recommendation**: Edge case — small sample size handling
+- **Recommendation**: Edge case -- small sample size handling
