@@ -92,7 +92,11 @@ lens and synthesize your judgment into clear recommendations.
 - **Feature requests with discussion** — issues where multiple users
   have chimed in show demand
 - **Quick wins** — small fixes or enhancements that can be shipped
-  fast, showing the project is active
+  fast, showing the project is active. Note: issues with fixes merged
+  to develop but not yet released are NOT quick wins — users don't
+  benefit until a CRAN release ships. Only count items as quick wins
+  if their fixes have already been released or can be implemented and
+  released promptly.
 - **Documentation gaps** — issues tagged `documentation` that would
   help users self-serve
 
