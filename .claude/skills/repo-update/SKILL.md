@@ -37,36 +37,45 @@ Read all three tracking documents and query GitHub/git in parallel.
 - `next-release.md`
 - All files matching `releases/v*.md`
 
+**Extract the "Updated" date** from each document's front matter. Use the
+oldest date as `SINCE_DATE` to scope the GitHub queries below. This avoids
+fetching years of irrelevant history and keeps context lean.
+
 ### GitHub API queries (use `gh` CLI against `sem-in-r/seminr`)
 
-Run these in parallel where possible:
+Run these in parallel where possible. Use `SINCE_DATE` (from document
+"Updated" dates above) to scope queries and avoid fetching years of history:
 
 ```bash
-# Open issues
+# Open issues (all — no date filter needed)
 gh issue list -R sem-in-r/seminr \
   --state open --limit 200 \
   --json number,title,labels,state,createdAt,updatedAt
 
-# Recently closed issues (last 90 days)
+# Issues closed since last update
 gh issue list -R sem-in-r/seminr \
   --state closed --limit 200 \
+  --search "closed:>SINCE_DATE" \
   --json number,title,labels,state,closedAt,stateReason
 
-# Open PRs
+# Open PRs (all — no date filter needed)
 gh pr list -R sem-in-r/seminr \
   --state open \
   --json number,title,author,state,baseRefName,\
 headRefName,createdAt,updatedAt,labels
 
-# Recently merged PRs (last 90 days)
+# PRs merged since last update
 gh pr list -R sem-in-r/seminr \
   --state merged --limit 100 \
+  --search "merged:>SINCE_DATE" \
   --json number,title,author,mergedAt,baseRefName,\
 headRefName,labels
 
-# Recently closed (unmerged) PRs
+# PRs closed WITHOUT merge since last update
+# (--state closed includes merged; use --search to exclude them)
 gh pr list -R sem-in-r/seminr \
-  --state closed --limit 50 \
+  --limit 50 \
+  --search "is:pr is:unmerged is:closed closed:>SINCE_DATE" \
   --json number,title,author,closedAt,baseRefName,\
 state,labels
 ```
@@ -74,8 +83,9 @@ state,labels
 ### Git queries (use local seminr repo path from CLAUDE.local.md)
 
 ```bash
-# All release tags with dates
-git -C <SEMINR_PATH> tag -l 'v*' \
+# All release tags with dates (no prefix filter — tags may or may not
+# have a 'v' prefix, e.g. "v2.4.2" vs "2.4.0")
+git -C <SEMINR_PATH> tag -l \
   --sort=-creatordate \
   --format='%(refname:short) %(creatordate:short)'
 
@@ -237,13 +247,16 @@ Run markdownlint on every modified `.md` file:
 npx markdownlint-cli <file1> <file2> ...
 ```
 
+The repo has a `.markdownlint.json` config that disables MD013 (line-length)
+entirely, since this repo's markdown is URL-heavy (tables, issue clusters,
+release notes) and the 80-char limit is impractical.
+
 If violations are found, fix them and re-run until clean. Common fixes:
 
 - Trailing spaces
 - Multiple blank lines
 - Missing blank line before/after headings or lists
 - Inconsistent list markers
-- Line length (if configured)
 
 ### Change summary
 
