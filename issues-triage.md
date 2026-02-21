@@ -5,6 +5,7 @@
 **Issue closing policy**: Fixed in develop, close on release
 
 Related documents:
+
 - [develop-upcoming.md](develop-upcoming.md) — PRs merged to develop, issues to close on next release
 - [released-2.4.2.md](releases/released-2.4.2.md) — release history, closed issues, archived PRs
 

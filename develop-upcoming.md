@@ -6,7 +6,8 @@
 **Issue closing policy**: Issues remain open until fixes are released to CRAN
 
 Related documents:
-- [chore-triage.md](chore-triage.md) -- open issues and development queue
+
+- [issues-triage.md](issues-triage.md) -- open issues and development queue
 - [released-2.4.2.md](releases/released-2.4.2.md) -- release history and archived items
 
 ---

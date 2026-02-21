@@ -4,7 +4,8 @@
 **Purpose**: Archive of closed issues, merged PRs, and past releases.
 
 Related documents:
-- [chore-triage.md](../chore-triage.md) -- open issues and development queue
+
+- [issues-triage.md](../issues-triage.md) -- open issues and development queue
 - [develop-upcoming.md](../develop-upcoming.md) -- PRs merged to develop, pending next release
 
 ---

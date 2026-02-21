@@ -4,7 +4,7 @@ This repo tracks issue triage, release planning, and development priorities for 
 
 ## Documents
 
-- `chore-triage.md` — Main development queue (priorities, bugs, features, backlog)
+- `issues-triage.md` — Main development queue (priorities, bugs, features, backlog)
 - `develop-upcoming.md` — PRs merged to develop, pending next release
 - `releases/` — Archived release history and closed issues
 
@@ -18,6 +18,7 @@ This repo tracks issue triage, release planning, and development priorities for 
 Each maintainer configures `CLAUDE.local.md` (gitignored) to point to their local seminr checkout. This enables Claude Code to read source files, grep functions, check git history, and run tests — all from this repo's context.
 
 Example git commands using the seminr repo:
+
 ```bash
 git -C /path/to/seminr log --oneline -20
 git -C /path/to/seminr diff develop..feature-branch

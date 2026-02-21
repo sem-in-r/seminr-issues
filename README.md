@@ -6,7 +6,7 @@ Private issue triage and release planning for [sem-in-r/seminr](https://github.c
 
 | File | Purpose |
 | --- | --- |
-| `chore-triage.md` | Main development queue: priorities, ready-to-work items, backlog |
+| `issues-triage.md` | Main development queue: priorities, ready-to-work items, backlog |
 | `develop-upcoming.md` | PRs merged to `develop`, issues to close on next release |
 | `releases/` | Archived release notes and closed issues |
 
