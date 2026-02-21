@@ -98,6 +98,10 @@ lens and synthesize your judgment into clear recommendations.
 
 ### Negative signals (deprioritize)
 
+- **Research / experimental items** — issues or PRs labeled
+  `research` or `experimental` that are purely exploratory (not
+  related to fixing bugs or delivering imminent features) should
+  not rank high. They belong in the parking lot at most.
 - Stale issues with no recent activity and no user demand
 - Large speculative features with no clear design
 - Issues that need a reproducible example but none has been provided
