@@ -7,7 +7,7 @@
 
 Related documents:
 - [chore-triage.md](chore-triage.md) -- open issues and development queue
-- [released-2.4.2.md](released-2.4.2.md) -- release history and archived items
+- [released-2.4.2.md](releases/released-2.4.2.md) -- release history and archived items
 
 ---
 
