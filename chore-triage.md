@@ -6,7 +6,7 @@
 
 Related documents:
 - [develop-upcoming.md](develop-upcoming.md) — PRs merged to develop, issues to close on next release
-- [completed-2.4.2.md](completed-2.4.2.md) — release history, closed issues, archived PRs
+- [released-2.4.2.md](released-2.4.2.md) — release history, closed issues, archived PRs
 
 ## Summary
 
