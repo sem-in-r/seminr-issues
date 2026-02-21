@@ -21,6 +21,7 @@ Related documents:
 | [**#384**](https://github.com/sem-in-r/seminr/pull/384) | [#386](https://github.com/sem-in-r/seminr/issues/386) (macOS CI failures) | @soumyaray | 2026-02-20 | Switch to PPM repo for macOS; remove macOS-devel from CI matrix; add workflow_dispatch + setup-pandoc@v2 |
 | [**#397**](https://github.com/sem-in-r/seminr/pull/397) | -- (CI modernization) | @soumyaray | 2026-02-21 | Add Windows CI, modernize to standard r-lib/actions `check-r-package@v2`, use public RSPM for all platforms |
 | [**#398**](https://github.com/sem-in-r/seminr/pull/398) | [#327](https://github.com/sem-in-r/seminr/issues/327) (quadratic interaction error) | @soumyaray | 2026-02-21 | `drop=FALSE` fixes for matrix subset coercion; add `quadratic_term()` convenience function |
+| [**#399**](https://github.com/sem-in-r/seminr/pull/399) | -- | @soumyaray | 2026-02-21 | chore: add issue templates for bug reports and feature requests |
 
 ---
 
@@ -41,3 +42,4 @@ Related documents:
 | PR | Author | Status | Notes |
 | --- | --- | --- | --- |
 | [**#394**](https://github.com/sem-in-r/seminr/pull/394) | @Marwolaeth | Open | Enable custom confidence levels for plotting bootstrapped models; community contribution |
+| [**#378**](https://github.com/sem-in-r/seminr/pull/378) | @soumyaray | Open | Issues and PR triage (internal maintenance) |

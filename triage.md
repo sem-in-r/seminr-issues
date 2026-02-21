@@ -13,7 +13,7 @@ Related documents:
 
 | Current Version | PRs to Review | Merged (pending release) | Experimental | Ready to Work | Needs Investigation | Backlog |
 | --------------- | ------------- | ------------------------ | ------------ | ------------- | ------------------- | ------- |
-| v2.4.2 | 1 (community) | [5 PRs](next-release.md) | 2 PRs | 5 moderate | 4 issues | 20+ |
+| v2.4.2 | 1 (community) | [6 PRs](next-release.md) | 2 PRs | 5 moderate | 4 issues | 20+ |
 
 ---
 
