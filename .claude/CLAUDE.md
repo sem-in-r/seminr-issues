@@ -8,6 +8,7 @@ Main development queue (auto-loaded): @triage.md
 
 Other documents (read on demand, not auto-loaded):
 
+- `triage-next.md` — Prioritized recommendations for what to work on next
 - `next-release.md` — PRs merged to develop, issues to close on next release
 - `releases/` — Archived release history and closed issues
 

@@ -1,10 +1,10 @@
 ---
-name: repo-update
+name: triage-update
 description: Sync seminr-issues tracking documents with the current state of the seminr GitHub repo.
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash(gh *), Bash(git -C *), Bash(npx markdownlint-cli *)
 ---
 
-# Repo Update
+# Triage Update
 
 Reconcile the three tracking documents (`triage.md`, `next-release.md`,
 `releases/v*.md`) with the live state of the seminr GitHub repo.
@@ -263,7 +263,7 @@ If violations are found, fix them and re-run until clean. Common fixes:
 Output a clear summary of all changes made, organized by document:
 
 ```text
-## Repo Update Summary
+## Triage Update Summary
 
 ### next-release.md
 - Added PR #NNN (description)
@@ -287,3 +287,6 @@ Output a clear summary of all changes made, organized by document:
 ```
 
 End with: **"Changes are local only — not committed."**
+
+Then suggest: **"Run `/triage-next` to refresh recommendations based
+on the updated state."**
