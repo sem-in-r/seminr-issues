@@ -7,8 +7,8 @@
 
 Related documents:
 
-- [issues-triage.md](issues-triage.md) -- open issues and development queue
-- [released-2.4.2.md](releases/released-2.4.2.md) -- release history and archived items
+- [triage.md](triage.md) -- open issues and development queue
+- [v2.4.2.md](releases/v2.4.2.md) -- release history and archived items
 
 ---
 

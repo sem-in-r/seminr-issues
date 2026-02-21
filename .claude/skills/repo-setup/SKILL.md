@@ -44,11 +44,11 @@ Worktrees: `<WORKTREES_PATH>`
 
 ## Planning Documents
 
-Main development queue: @issues-triage.md
+Main development queue: @triage.md
 
 Other documents (read on demand, not auto-loaded):
-- `develop-upcoming.md` — PRs merged to develop, issues to close on next release
-- `releases/released-2.4.2.md` — release history, closed issues, archived PRs
+- `next-release.md` — PRs merged to develop, issues to close on next release
+- `releases/` — release history, closed issues, archived PRs
 ```
 
 If the user opted out of worktrees, omit the `Worktrees:` line.

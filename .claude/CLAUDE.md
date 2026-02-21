@@ -4,11 +4,11 @@ This repo tracks issue triage, release planning, and development priorities for 
 
 ## Documents
 
-Main development queue (auto-loaded): @issues-triage.md
+Main development queue (auto-loaded): @triage.md
 
 Other documents (read on demand, not auto-loaded):
 
-- `develop-upcoming.md` — PRs merged to develop, issues to close on next release
+- `next-release.md` — PRs merged to develop, issues to close on next release
 - `releases/` — Archived release history and closed issues
 
 ## Workflow
@@ -28,6 +28,10 @@ Example git commands using the seminr repo:
 git -C /path/to/seminr log --oneline -20
 git -C /path/to/seminr diff develop..feature-branch
 ```
+
+## CRAN Release Cadence
+
+CRAN policy expects packages to release no more frequently than every 1-2 months. Do not suggest or plan a release that would be too soon after the last one. Check the most recent release tag date in the seminr repo before making release recommendations.
 
 ## Markdown Quality
 

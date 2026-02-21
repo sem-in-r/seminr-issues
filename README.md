@@ -6,8 +6,8 @@ Issue triage and release planning for [sem-in-r/seminr](https://github.com/sem-i
 
 | File | Purpose |
 | --- | --- |
-| `issues-triage.md` | Main development queue: priorities, ready-to-work items, backlog |
-| `develop-upcoming.md` | PRs merged to `develop`, issues to close on next release |
+| `triage.md` | Main development queue: priorities, ready-to-work items, backlog |
+| `next-release.md` | PRs merged to `develop`, issues to close on next release |
 | `releases/` | Archived release notes and closed issues |
 
 ## For Maintainers

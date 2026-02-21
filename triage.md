@@ -6,14 +6,14 @@
 
 Related documents:
 
-- [develop-upcoming.md](develop-upcoming.md) — PRs merged to develop, issues to close on next release
-- [released-2.4.2.md](releases/released-2.4.2.md) — release history, closed issues, archived PRs
+- [next-release.md](next-release.md) — PRs merged to develop, issues to close on next release
+- [v2.4.2.md](releases/v2.4.2.md) — release history, closed issues, archived PRs
 
 ## Summary
 
 | Current Version | PRs to Review | Merged (pending release) | Experimental | Ready to Work | Needs Investigation | Backlog |
 | --------------- | ------------- | ------------------------ | ------------ | ------------- | ------------------- | ------- |
-| v2.4.2 | 1 (community) | [5 PRs](develop-upcoming.md) | 2 PRs | 5 moderate | 4 issues | 20+ |
+| v2.4.2 | 1 (community) | [5 PRs](next-release.md) | 2 PRs | 5 moderate | 4 issues | 20+ |
 
 ---
 
